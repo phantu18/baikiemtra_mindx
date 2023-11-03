@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Số 1</title>
+  </head>
+  <style>
+    * {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Bài Tập Số 1</h1>
+    <h2>Tổng số nguyên tố trong khoảng a đến b</h2>
+    <div>
+      <label for="">Nhập Số Nguyên a: </label>
+      <input type="number" id="soNguyen__a" placeholder="20" />
+    </div>
+    <br />
+    <div>
+      <label for="">Nhập Số Nguyên b: </label>
+      <input type="number" id="soNguyen__b" placeholder="50" />
+    </div>
+    <button style="margin-top: 30px" onclick="tinhTong()">
+      Tính tổng số nguyên tố
+    </button>
+    <p id="tongCacSoNguyenTo"></p>
+
+    <script>
+      // Kiểm Tra Xem Có Phải Số Nguyên Tố Không
+
+      function kiemTraSoNguyenTo(soNT) {
+        if (soNT <= 1) return false;
+        if (soNT <= 3) return true;
+
+        if (soNT % 2 === 0 || soNT % 3 === 0) return false;
+
+        for (let i = 5; i * i <= soNT; i += 6) {
+          if (soNT % i === 0 || soNT % (i + 2) === 0) return false;
+        }
+
+        return true;
+      }
+      // Lấy dữ liệu - Kiểm tra điều kiện - Tính tổng
+      function tinhTong() {
+        const a = parseInt(document.getElementById("soNguyen__a").value);
+        const b = parseInt(document.getElementById("soNguyen__b").value);
+        let sum = 0;
+
+        if (a >= b || isNaN(a) || isNaN(b)) {
+          document.getElementById("tongCacSoNguyenTo").textContent =
+            "Vui Lòng Nhập Lại a và b (a<b).";
+          return;
+        }
+
+        for (let i = a; i <= b; i++) {
+          if (kiemTraSoNguyenTo(i)) {
+            sum += i;
+          }
+        }
+
+        document.getElementById(
+          "tongCacSoNguyenTo"
+        ).textContent = `Tổng số nguyên tố từ ${a} đến ${b} là: ${sum} `;
+      }
+    </script>
+  </body>
+</html>

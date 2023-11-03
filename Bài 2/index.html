@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Số 2</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      div#tamGiac {
+        text-align: left !important;
+        padding-left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bài Tập Số 2</h1>
+    <p>Nhập số hàng từ 1 đến 10 để tạo hình tam giác *:</p>
+    <input type="number" id="soSao" min="1" max="10" />
+    <button onclick="numberOneTriangle(document.getElementById('soSao').value)">
+      Tạo hình tam giác
+    </button>
+    <div id="tamGiac"></div>
+    <script>
+      // Kiểm tra số sao hợp lệ
+      function numberOneTriangle(soSao) {
+        if (soSao < 1 || soSao > 10) {
+          document.getElementById("tamGiac").innerHTML =
+            "Vui lòng nhập lại số (1=< Số Sao =<10 )";
+          return;
+        }
+
+        // Tạo số dòng sao để tạo ra hình tam giác
+        let soDong = "";
+        for (let i = 1; i <= soSao; i++) {
+          let sao = "";
+          for (let s = 1; s <= i; s++) {
+            sao += "*";
+          }
+          soDong += sao + "<br>";
+        }
+
+        document.getElementById("tamGiac").innerHTML = soDong;
+      }
+    </script>
+  </body>
+</html>

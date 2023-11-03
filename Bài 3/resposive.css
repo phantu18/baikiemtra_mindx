@@ -1,0 +1,65 @@
+/* Màn hình mobi   iphone 12 pro */
+@media (max-width: 390.98px) {
+  h1,
+  #nav {
+    display: none;
+  }
+  #new__users {
+    padding-bottom: 50px;
+  }
+  .text__right p {
+    font-size: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+  .product {
+    width: 345px;
+  }
+  .product:hover {
+    transform: none;
+    border-radius: 1px;
+    box-shadow: none;
+  }
+  ul.products li {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  ul.products {
+    display: block;
+  }
+}
+/* Màn hình table */
+@media (min-width: 391px) and (max-width: 768px) {
+  h1,
+  #nav {
+    display: none;
+  }
+  #new__users {
+    padding-bottom: 50px;
+  }
+  .text__right p {
+    font-size: 20px;
+  }
+  .product {
+    width: 700px;
+  }
+  .product:hover {
+    transform: none;
+    border-radius: 1px;
+    box-shadow: none;
+  }
+  ul.products li {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  ul.products {
+    display: block;
+  }
+}
+
+/* Màn hình máy tính */
+@media (min-width: 991.98px) {
+  nav.navbar {
+    display: none;
+  }
+}

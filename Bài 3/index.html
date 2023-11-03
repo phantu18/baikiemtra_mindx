@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Số 3</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="resposive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <h1 style="margin: 20px 30px;">User</h1>
+    <header>
+          <nav id="nav">
+            <div class="search-container">
+                <img src="./img/search-interface-symbol.png" width="40" height="40" alt="">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                </form>
+              </div>
+            <ul>
+            <li><a class="link_nav" href="#">Reputation</a></li>
+            <li><a class="link_nav" href="#">New users</a></li>
+            <li><a class="link_nav" href="#">Voters</a></li>
+            <li><a class="link_nav" href="#">Editors</a></li>
+            <li><a class="link_nav" href="#">Moderators</a></li>
+            </ul>
+          </nav>
+
+          <!-- Navbar mobi -->
+          <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">User</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">User</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Reputation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New users</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Voters</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Editors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Moderators</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- end nav mobi -->
+    </header>
+    <section>
+        <div id="new__users">
+            <div style="padding-top: 50px">
+              <ul class="products">
+                <li>
+                  <div class="product" style="display: flex;">
+                    <div class="img__left" style="width: 40%;">
+                        <img src="./img/Ellipse 1.png" alt="">
+                    </div>
+                    <div class="text__right">
+                        <p><b>Lelah Nichols</b></p>
+                        <p>Troy, MI</p>
+                        <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">clothes</span>
+                        <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">stem</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="product" style="display: flex;">
+                      <div class="img__left" style="width: 40%;">
+                        <img src="./img/Ellipse 1 (2).png" alt="">
+                      </div>
+                      <div class="text__right">
+                          <p><b>Jesus Weiss</b></p>
+                          <p>Fort Worth, TX</p>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">headset</span>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">gadget</span>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">speed</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="product" style="display: flex;">
+                      <div class="img__left" style="width: 40%;">
+                          <img src="./img/Ellipse 1 (3).png" alt="">
+                      </div>
+                      <div class="text__right">
+                          <p><b>Annie Rice</b></p>
+                          <p>Austin, TX</p>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">road</span>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">mountain</span>
+                          <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">trip</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+                <div>
+                  <ul class="products">
+                    <li>
+                      <div class="product" style="display: flex;">
+                        <div class="img__left" style="width: 40%;">
+                            <img src="./img/Ellipse 1 (4).png" alt="">
+                        </div>
+                        <div class="text__right">
+                            <p><b>Robert Brower</b></p>
+                            <p>Cincinnati, OH</p>
+                            <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">gears</span>
+                            <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">frames</span>
+                            <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">clothes</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="product" style="display: flex;">
+                          <div class="img__left" style="width: 40%;">
+                            <img src="./img/Ellipse 1 (5).png" alt="">
+                          </div>
+                          <div class="text__right">
+                              <p><b>Amy Campbell</b></p>
+                              <p>Warrior, AL</p>
+                              <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">clothes</span>
+                              <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">stem</span>
+                              <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">clothes</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="product" style="display: flex;">
+                          <div class="img__left" style="width: 40%;">
+                            <img src="./img/Ellipse 1 (6).png" alt="">
+                          </div>
+                          <div class="text__right">
+                              <p><b>Anthony S. Morin</b></p>
+                              <p>Lyndhurst, NJ</p>
+                              <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">vintage</span>
+                              <span style="color:#516FD4 ;border-radius: 40px; padding: 5px; border: 1px solid black;">electric</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
